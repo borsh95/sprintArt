@@ -1,0 +1,39 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~
+VARIABLES
+~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+:root {
+	/*site font*/
+	--fm-1: "SFUIDisplay", sans-serif;
+
+	/*font weight*/
+	--fm-1_fw-s: 100;
+	--fm-1_fw-m: 300;
+	--fm-1_fw-l: 500;
+	--fm-1_fw-xl: 600;
+	--fm-1_fw-xxl: 700;
+
+	/*site palette*/
+	--orange-300: #ffb818;
+	
+	--gray-50: #fcfcfc;
+	--gray-100: #fafafa;
+
+	--black-400: #131313;
+	--black-500: #000;
+
+	--cl-text: var(--black-400);
+	--cl-text-lig: var(--orange-300);
+	--cl-text-hover: var(--orange-300);
+
+	--border-color-lig: var(--orange-300);
+	--border-color-dark: var(--black-400);
+
+	--btn-bg-lig: var(--orange-300);
+	--btn-bg-dark: var(--black-400);
+}
+
+
+/***********************Main*/
+$duration: 0.3s;
+

@@ -1,0 +1,50 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~
+COMMON BUTTON
+~~~~~~~~~~~~~~~~~~~~~~~~~*/
+%baseOption {
+	cursor: pointer;
+	display: inline-flex;
+	justify-content: center;
+	font-weight: var(--fm-1_fw-m);
+	align-items: center;
+	line-height: 1;
+	text-align: center;
+	white-space: nowrap;
+	transition: all $duration;
+}
+
+.btn-type-1 {
+	@extend %baseOption;
+	padding: 0 12px;
+	min-width: 212px;
+	height: 47px;
+	font-weight: var(--fm-1_fw-m);
+	font-size: 18px;
+	border: 3px solid var(--border-color-lig);
+	background-color: var(--btn-bg-lig);
+	border-radius: 23.5px;
+
+	&:hover {
+		background-color: transparent;
+	}
+}
+
+.btn-type-2 {
+	--bg: var(--border-color-lig);
+
+	@extend %baseOption;
+	padding: 0 12px;
+	font-weight: var(--fm-1_fw-m);
+	background-color: transparent;
+	border: 3px solid var(--bg);
+	
+
+	&:hover {
+		background-color: var(--bg);
+	}
+}
+
+.btn-type-2--light {
+	@extend .btn-type-2;
+	border-color: var(--border-color-lig);
+}

@@ -1,0 +1,25 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~
+FONT FAMILY
+~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@mixin font-face($font-family, $url, $weight) {
+	@font-face {
+		font-family: '#{$font-family}';
+		src: url('#{$url}.eot');
+		src: url('#{$url}.eot?#iefix') format('embedded-opentype'),
+			url('#{$url}.woff2') format('woff2'),
+			url('#{$url}.woff') format('woff'),
+			url('#{$url}.ttf') format('truetype'),
+			url('#{$url}.svg#Calibri') format('svg');
+		font-weight: #{$weight};
+		font-display: swap;
+		font-style: normal;
+	}
+}
+
+@include font-face('SFUIDisplay', '../../fonts/SFUIDisplay-Thin', 100);
+@include font-face('SFUIDisplay', '../../fonts/SFUIDisplay-Light', 300);
+@include font-face('SFUIDisplay', '../../fonts/SFUIDisplay-Medium', 500);
+@include font-face('SFUIDisplay', '../../fonts/SFUIDisplay-Semibold', 600);
+@include font-face('SFUIDisplay', '../../fonts/SFUIDisplay-Bold', 700);
+@include font-face('mr_Inverkrug', '../../fonts/mr_Inverkrug-Inverkrug', 'inverkrug');
+
