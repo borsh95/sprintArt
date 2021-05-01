@@ -30,21 +30,39 @@ COMMON BUTTON
 }
 
 .btn-type-2 {
-	--bg: var(--border-color-lig);
+	--height: 48px;
+	--min-width: 214px;
+	--tint: var(--btn-bg-lig);
 
 	@extend %baseOption;
 	padding: 0 12px;
+	height: var(--height);
+	min-width: var(--min-width);
 	font-weight: var(--fm-1_fw-m);
+	font-size: 18px;
+	text-transform: uppercase;
 	background-color: transparent;
-	border: 3px solid var(--bg);
+	border: 3px solid var(--tint);
+	border-radius: calc(var(--height) / 2);
+	transition-property: color, background-color;
+	transition-duration: $duration;
 	
 
 	&:hover {
-		background-color: var(--bg);
+		background-color: var(--tint);
 	}
 }
 
 .btn-type-2--light {
+	--tint: var(--btn-bg-lig);
 	@extend .btn-type-2;
-	border-color: var(--border-color-lig);
+}
+
+.btn-type-2--dark {
+	--tint: var(--btn-bg-dark);
+	@extend .btn-type-2;
+
+	&:hover {
+		color: #fff;
+	}
 }

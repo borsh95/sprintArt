@@ -62,10 +62,28 @@ body {
 .title-2 {
 	font-weight: var(--fm-1_fw-m);
 	font-size: 36px;
+
+	@include desctop-min {
+		font-size: 32px;
+	}
+
+	@include mobile {
+		font-size: 18px;
+	}
 }
 
-@import "./components/blocks";
+.text {
+	line-height: (30/18);
+	font-size: 18px;
+
+	@include mobile {
+		line-height: (24/16);
+		font-size: 16px;
+	}
+}
+
 @import "./components/btns";
+@import "./components/blocks";
 @import "./components/header";
 @import "./components/footer";
 

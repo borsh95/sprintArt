@@ -11,6 +11,11 @@
 	align-items: center;
 }
 
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
+
 .for-table {
 	display: none;
 
@@ -48,7 +53,11 @@
 }
 
 .selected-text {
-	color: var(--color2);
+	color: var(--cl-text-lig);
+}
+
+.text-red {
+	color: #ff0000;
 }
 
 .fw-bold {

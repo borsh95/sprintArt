@@ -1,172 +1,267 @@
 /*~~~~~~~~~~~~~~~~~~~~~~~~~
 INDEX PAGE	
 ~~~~~~~~~~~~~~~~~~~~~~~~~*/
-.starting {
-	position: relative;
-	padding-top: 60px;
-	overflow: hidden;
-
-	&__spot-bg {
-		top: -940px;
-		left: 280px;
-		z-index: -2;
-	}
-
-	&__text-bg {
-		right: -9px;
-		top: 60px;
-	}
-
-	.container	{
+.index-page {
+	@at-root .starting {
 		position: relative;
-		display: flex;
-		justify-content: space-between;
-	}
-
-	&__col {
-		&-first {
-			padding-top: 15px;
-			width: 65%;
-		}
-	}
-
-	&__title,
-	&__subtitle {
-		text-transform: uppercase;
-	}
-
-	&__title {
-		margin-bottom: 30px;
-	}
-
-	&__subtitle {
-		margin-bottom: 100px;
-		font-weight: 700;
-		font-size: 30px;
-		line-height: (40/30);
-		color: var(--cl-text-lig);
-	}
-
-	&__text {
-		margin: 25px 0;
-		font-size: 24px;
-	}
-
-	&__application {
-		width: 545px;
-
-		.application__btn {
-			margin-top: 15px;
-			height: 45px;
-			min-width: 210px;
-			font-size: 16px;
-			line-height: 45px;
-		}
-	}
-
-	@include desctop-mid {
-		&__col {
-			&-first {
-				width: 60%;
-			}
-		}
-
-		&__piece {
-			width: 400px;
-		}
-	}
-
-	@include desctop-min {
-		&__text-bg {
-			display: none;
-		}
-
-		&__col {
-			&-first {
-				width: 580px;
-			}
-		}
-
-		&__piece {
-			width: 320px;
-		}
-
-		&__application {
-			width: auto;
-
-			.b-input {
-				max-width: none;
-			}
-		}
-	}
-
-	@include table {
-		.container {
-			flex-direction: column;
-		}
-
-		&__col-first {
-			padding-top: 0;
-			width: auto;
-		}
-
-		&__col-second {
-			margin-top: 60px;
-		}
-
-		&__piece {
-			margin: 0 auto;
-		}
-
-		&__subtitle {
-			margin-bottom: 80px;
-			font-size: 26px;
-		}
-
-		&__text {
-			font-size: 22px;
-		}
-	}
-
-	@include mobile {
-		padding-top: 36px;
+		padding-top: 60px;
+		overflow: hidden;
 
 		&__spot-bg {
-			top: -190px;
-			left: auto;
-			right: -100px;
-			width: 433px;
-			height: 322px;
+			top: -940px;
+			left: 280px;
+			z-index: -2;
+		}
+
+		&__text-bg {
+			right: -9px;
+			top: 60px;
+		}
+
+		.container	{
+			position: relative;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__col {
+			&-first {
+				padding-top: 15px;
+				width: 65%;
+			}
+		}
+
+		&__title,
+		&__subtitle {
+			text-transform: uppercase;
 		}
 
 		&__title {
-			margin-bottom: 15px;
+			margin-bottom: 30px;
 		}
 
 		&__subtitle {
-			margin-bottom: 35px;
-			font-size: 20px;
-			line-height: (25/20);
-		}
-
-		&__piece {
-			width: 44%;
+			margin-bottom: 100px;
+			font-weight: 700;
+			font-size: 30px;
+			line-height: (40/30);
+			color: var(--cl-text-lig);
 		}
 
 		&__text {
-			margin: 20px 0;
-			font-size: 16px;
-			line-height: (24/16);
+			margin: 25px 0;
+			font-size: 24px;
 		}
 
 		&__application {
-			.b-input {
-				--air: 18px;
-			}
+			width: 545px;
 
 			.application__btn {
-				margin-top: 10px;
+				margin-top: 15px;
+				height: 45px;
+				min-width: 210px;
+				font-size: 16px;
+				line-height: 45px;
 			}
 		}
+
+		@include desctop-mid {
+			&__col {
+				&-first {
+					width: 60%;
+				}
+			}
+
+			&__piece {
+				width: 400px;
+			}
+		}
+
+		@include desctop-min {
+			&__text-bg {
+				display: none;
+			}
+
+			&__col {
+				&-first {
+					width: 580px;
+				}
+			}
+
+			&__piece {
+				width: 320px;
+			}
+
+			&__application {
+				width: auto;
+
+				.b-input {
+					max-width: none;
+				}
+			}
+		}
+
+		@include table {
+			.container {
+				flex-direction: column;
+			}
+
+			&__col-first {
+				padding-top: 0;
+				width: auto;
+			}
+
+			&__col-second {
+				margin-top: 60px;
+			}
+
+			&__piece {
+				margin: 0 auto;
+			}
+
+			&__subtitle {
+				margin-bottom: 80px;
+				font-size: 26px;
+			}
+
+			&__text {
+				font-size: 22px;
+			}
+		}
+
+		@include mobile {
+			padding-top: 36px;
+
+			&__spot-bg {
+				top: -190px;
+				left: auto;
+				right: -100px;
+				width: 433px;
+				height: 322px;
+			}
+
+			&__title {
+				margin-bottom: 15px;
+			}
+
+			&__subtitle {
+				margin-bottom: 35px;
+				font-size: 20px;
+				line-height: (25/20);
+			}
+
+			&__piece {
+				width: 44%;
+			}
+
+			&__text {
+				margin: 20px 0;
+				font-size: 16px;
+				line-height: (24/16);
+			}
+
+			&__application {
+				.b-input {
+					--air: 18px;
+				}
+
+				.application__btn {
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+
+	&__categories {
+		margin-top: 135px;
+
+		@include desctop-min {
+			margin-top: 130px;
+		}
+
+		@include mobile {
+			margin-top: 56px;
+		}
+	}
+
+	&__examples {
+		margin-top: 100px;
+
+		@include desctop-min {
+			margin-top: 90px;
+		}
+
+		@include mobile {
+			margin-top: 52px;
+		}
+	}
+	
+	&__order-process {
+		margin-top: 95px;
+		background-color: #fcfcfc;
+
+		@include mobile {
+			margin-top: 52px;
+		}
+	}
+
+	&__eco {
+		margin-top: 75px;
+
+		@include mobile {
+			margin-top: 39px;
+		}
+	}
+
+	@at-root .eco {
+		.container {
+			background: url(./../../img/pages/index/eco-bg.png) no-repeat right top;
+			min-height: 415px;
+		}
+
+		&__content {
+			width: 50.5%;
+		}
+		&__title {
+			margin-bottom: 48px;
+		}
+
+		&__text:not(:last-child) {
+			margin-bottom: 30px;
+		}
+
+		@include desctop-mid {
+			.container {
+				background-size: 500px auto;
+				background-position: right 50px;
+			}
+		}
+
+		@include desctop-min {
+			.container {
+				background-size: 420px auto;
+				min-height: auto;
+			}
+		}
+
+		@include table {
+			.container {
+				background: none;
+			}
+
+			&__content {
+				width: auto;
+			}
+		}
+
+		@include mobile {
+			&__title {
+				margin-bottom: 35px;
+			}
+		}
+	}
+
+	&__reviews {
+		margin-top: 70px;
 	}
 }

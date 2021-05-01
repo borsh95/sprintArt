@@ -85,6 +85,47 @@ footer {
 		}
 	}
 
+	&__menu {
+		margin-top: 20px;
+
+		&-title {
+			margin-bottom: 21px;
+			font-weight: 600;
+			font-size: 17.5px;
+		}
+
+		.container {
+			justify-content: space-between;
+		}
+
+		&-col {
+			width: calc(50% - (80px / 2));
+		}
+
+		&-links {
+			margin: 0 0 -11px -11px;
+		}
+
+		&-link {
+			display: inline-flex;
+			align-items: center;
+			margin: 0 0 11px 11px;
+			padding: 0 22px;
+			min-height: 40px;
+			line-height: 1.2;
+			font-size: 15px;
+			text-align: center;
+			border: 1px solid #bfbfbf;
+			transition-property: color, border-color;
+			transition-duration: $duration;
+
+			&:hover {
+				color: var(--border-color-lig);
+				border-color: currentColor;
+			}
+		}
+	}
+
 	&__bottom {
 		margin-top: 23px;
 		padding: 14px 0 15px;
@@ -188,6 +229,20 @@ footer {
 
 			&:last-child {
 				margin-bottom: 0;
+			}
+		}
+
+		&__menu {
+			.container {
+				flex-direction: column;
+			}
+
+			&-col {
+				width: auto;
+			}
+
+			&-col:last-child {
+				margin-top: 30px;
 			}
 		}
 

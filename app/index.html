@@ -133,7 +133,7 @@
 											<a href="#" class="sub-menu__link">
 												<span class="sub-menu__link-img"
 													style="background-image: url(./assets/img/nav/paintings/art.jpg)"></span>
-												<span class="sub-menu__link-text">КАРТИНЫ НА ХОЛСТЕ</span>
+												<span class="sub-menu__link-text">КАРТИНЫ ИнтерьНА ХОЛСТЕ</span>
 											</a>
 											<a href="#" class="sub-menu__link">
 												<span class="sub-menu__link-img"
@@ -249,7 +249,8 @@
 
 		<!-- MAIN -->
 		<main>
-			<section class="starting">
+			<!-- starting block -->
+			<section class="index-page__starting starting">
 				<div class="starting__text-bg text-bg" style="background-image: url(./assets/img/text-bg.png)"></div>
 				<div class="container">
 					<div class="starting__spot-bg spot-bg"
@@ -282,9 +283,342 @@
 					<!-- col second -->
 					<div class="starting__col starting__col-second">
 						<div class="starting__piece piece">
-							<img src="./assets/img/piece.jpg" alt="">
+							<picture>
+								<source srcset="./assets/img/piece.webp 1x" type="image/webp">
+								<img src="./assets/img/piece.jpg" srcset="./assets/img/piece@2x.jpg 2x" alt="Картина">
+							</picture>
+
 						</div>
 					</div>
+				</div>
+			</section>
+			<!-- categories -->
+			<div class="index-page__categories categories">
+				<div class="container">
+					<a class="categories__item categories__item--paint" href="#">
+						<span class="categories__item-img">
+							<img src="./assets/img/components/categories/kartini.png" alt="Картины">
+						</span>
+						<button class="categories__item-btn btn-type-2--dark" aria-label="Картины">Картины</button>
+					</a>
+					<a class="categories__item categories__item--photo" href="#">
+						<span class="categories__item-img">
+							<img src="./assets/img/components/categories/fotooboi.png" alt="Фотообои">
+						</span>
+						<button class="categories__item-btn btn-type-2--dark" aria-label="Картины">Фотообои</button>
+					</a>
+				</div>
+			</div>
+			<!-- examples -->
+			<section class="index-page__examples examples">
+				<div class="container flex-col">
+					<h3 class="examples__title title-2">ПРИМЕРЫ ВЫПОЛНЕННЫХ РАБОТ</h3>
+					<div class="examples__list">
+						<div class="examples__item"
+							style="background-image: url(./assets/img/components/examples/img-1.jpg)"></div>
+						<div class="examples__item"
+							style="background-image: url(./assets/img/components/examples/img-2.jpg)"></div>
+						<div class="examples__item"
+							style="background-image: url(./assets/img/components/examples/img-3.jpg)"></div>
+						<div class="examples__item"
+							style="background-image: url(./assets/img/components/examples/img-4.jpg)"></div>
+					</div>
+					<button class="examples__btn btn-type-2--light" aria-label="Смотреть портфолио">Смотреть портфолио
+					</button>
+				</div>
+			</section>
+			<!-- order process -->
+			<section class="index-page__order-process order-process">
+				<div class="container flex-col">
+					<h3 class="order-process__title title-2">КАК ОФОРМИТЬ ЗАКАЗ?</h3>
+					<div class="order-process__list">
+						<div class="order-process__item flex-col">
+							<div class="order-process__item-img"
+								style="background-image: url(./assets/img/components/order-process/img-1.png)"></div>
+							<p class="order-process__item-text">Выбираете фото или изображение</p>
+						</div>
+						<div class="order-process__item flex-col">
+							<div class="order-process__item-img"
+								style="background-image: url(./assets/img/components/order-process/img-2.png)"></div>
+							<p class="order-process__item-text">Отправляете заявку, заполнив форму заказа или
+								отправляете на нашу почту <a class="selected-text fw-semiBold"
+									href="mailto:info@sprintart.by">info@sprintart.by</a></p>
+						</div>
+						<div class="order-process__item flex-col">
+							<div class="order-process__item-img"
+								style="background-image: url(./assets/img/components/order-process/img-3.png)"></div>
+							<p class="order-process__item-text">Дизайнер готовит макет вашей работы и отправляет на
+								согласование</p>
+						</div>
+						<div class="order-process__item flex-col">
+							<div class="order-process__item-img"
+								style="background-image: url(./assets/img/components/order-process/img-4.png)"></div>
+							<p class="order-process__item-text">Изготавливаем картину, фотообои за 1-3 дня</p>
+						</div>
+						<div class="order-process__item flex-col">
+							<div class="order-process__item-img"
+								style="background-image: url(./assets/img/components/order-process/img-5.png)"></div>
+							<p class="order-process__item-text">Доставляем в любой населенный пункт Беларуси! </p>
+						</div>
+					</div>
+					<button class="examples__btn btn-type-2--light" aria-label="Оформите заказ">ОФОРМИТЬ ЗАКАЗ</button>
+				</div>
+			</section>
+			<!-- eco -->
+			<section class="index-page__eco eco">
+				<div class="container">
+					<h3 class="eco__title title-2">БЕЗОПАСНОСТЬ И ЭКОЛОГИЧНОСТЬ</h3>
+					<div class="eco__content">
+						<p class="eco__text text">
+							УФ-чернила уже одобрены инстанцией органа сертификации, что уже гарантирует безопасность
+							применения этого продукта в бытовых, образовательных, дошкольных и медицинских учреждениях!
+							Наши УФ-чернила исключительно дружественны в отношении окружающей среды. Они не выделяют
+							опасных летучих органических соединений! В настоящее время наши чернила проходят
+							сертификацию GREENGUARD, основанную на строжайших международных стандартах, действующих в
+							отношении химических выбросов в атмосферу.
+						</p>
+						<p class="eco__text text">
+							<span class="fw-semiBold">НАШЛИ ДЕШЕВЛЕ?</span> Скорее всего Вам предлагают <span
+								color="text-red">«СОЛЬВЕНТ»</span> («ЭкоСОЛЬВЕНТ») – задумайтесь о своем здоровье!
+							Этот вид печати запрещен во многих странах
+							мира, где заботятся об экологии.
+						</p>
+					</div>
+				</div>
+
+			</section>
+			<!-- reviews -->
+			<section class="index-page__reviews reviews">
+				<div class="container flex-col">
+					<h3 class="reviews__title title-2">ОТЗЫВЫ</h3>
+					<p class="reviews__subtitle text">Более 580 настоящих отзывов от живых людей <br>
+						Надеемся, и вы оставите здесь свои положительные впечатления от работы с нами!</p>
+					<div class="reviews__list">
+						<!-- review item -->
+						<article class="reviews__review review">
+							<div class="review__avatar">
+								<div class="review__avatar-img"
+									style="background-image: url(./assets/img/components/review/avatar-2.png)"></div>
+								<div class="review__avatar-name">Юлия Жуковская</div>
+							</div>
+							<p class="review__text">
+								Восхищены мастерством художницы. Заказывала сыну на 15 лет, сама не знала, что и какой
+								вариант выбрать. Спасибо, что посоветовали довериться художнице. Очень-очень
+								понравилось, как получилось... Могу сказать теперь 100%. Ребёнок не ожидал и остался
+								приятно шокирован. Вы таланты!!! СУПЕР!!!Желаем дальнейших успехов... Спасибо спасибо
+								спасибо...
+							</p>
+							<button class="review__btn btn-type-2--dark" aria-label="Подробнее">ПОДРОБНЕЕ</button>
+						</article>
+						<!-- review item -->
+						<article class="reviews__review review">
+							<div class="review__avatar">
+								<div class="review__avatar-img"
+									style="background-image: url(./assets/img/components/review/avatar-2.png)"></div>
+								<div class="review__avatar-name">Юлия Жуковская</div>
+							</div>
+							<p class="review__text">
+								Восхищены мастерством художницы. Заказывала сыну на 15 лет, сама не знала, что и какой
+								вариант выбрать. Спасибо, что посоветовали довериться художнице. Очень-очень
+								понравилось, как получилось... Могу сказать теперь 100%. Ребёнок не ожидал и остался
+								приятно шокирован. Вы таланты!!! СУПЕР!!!Желаем дальнейших успехов... Спасибо спасибо
+								спасибо...
+							</p>
+							<button class="review__btn btn-type-2--dark" aria-label="Подробнее">ПОДРОБНЕЕ</button>
+						</article>
+					</div>
+					<a class="reviews__btn btn-type-2--light" href="#">ПОСМОТРЕТЬ ЕЩЕ</a>
+				</div>
+			</section>
+			<!-- consultation form -->
+			<section class="index-page__consult-form consult">
+				<div class="container">
+					<h3 class="consult__title title-2">ЗАКАЖИТЕ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ ДИЗАЙНЕРА!</h3>
+					<form action="#" class="consult__form">
+						<!-- unit to form -->
+						<div class="consult__form-col">
+							<div class="consult__form-b-input b-input">
+								<input type="tel" placeholder="Введите номер телефона">
+							</div>
+							<p class="consult__form-desc">
+								Чтобы мы перезвонили вам и ответили на все вопросы,
+								а также предложили низкую цену!
+							</p>
+						</div>
+						<!-- unit to form -->
+						<div class="consult__form-col">
+							<div class="consult__form-b-input b-input">
+								<input type="email" placeholder="Введите адрес e-mail">
+							</div>
+							<p class="consult__form-desc">
+								Чтобы мы отправили вам наше предложение или
+								прислали варианты дизайна
+							</p>
+						</div>
+						<button class="consult__form-btn btn-type-1" aria-label="Получить консультацию">ПОЛУЧИТЬ
+							КОНСУЛЬТАЦИЮ</button>
+					</form>
+				</div>
+			</section>
+			<!-- advantage -->
+			<section class="index-page__advantage advantage">
+				<div class="container">
+					<h3 class="advantage__title title-2">ПОЧЕМУ ЗАКАЗЫВАТЬ У НАС ВЫГОДНО</h3>
+					<div class="advantage__list">
+						<div class="advantage__item">
+							<div class="advantage__item-img"
+								style="background-image: url(./assets/img/components/advantage/img-1.png)"></div>
+							<p class="advantage__item-text">
+								<span class="fw-bold">24</span> часа <span class="fw-bold">7</span> дней в неделю
+								принимаем ваши заказы
+							</p>
+						</div>
+						<div class="advantage__item">
+							<div class="advantage__item-img"
+								style="background-image: url(./assets/img/components/advantage/img-2.png)"></div>
+							<p class="advantage__item-text">
+								Без предоплаты, оплата при получении
+							</p>
+						</div>
+						<div class="advantage__item">
+							<div class="advantage__item-img"
+								style="background-image: url(./assets/img/components/advantage/img-3.png)"></div>
+							<p class="advantage__item-text">
+								Скидки до <span class="fw-bold">30%</span>, низкие цены и распродажи
+							</p>
+						</div>
+						<div class="advantage__item">
+							<div class="advantage__item-img"
+								style="background-image: url(./assets/img/components/advantage/img-4.png)"></div>
+							<p class="advantage__item-text">
+								<span class="fw-bold">100%</span> гарантия возврата денег
+							</p>
+						</div>
+						<div class="advantage__item">
+							<div class="advantage__item-img"
+								style="background-image: url(./assets/img/components/advantage/img-5.png)"></div>
+							<p class="advantage__item-text">
+								<span class="fw-bold">10380</span> довольных и счастливых клиентов
+							</p>
+						</div>
+						<div class="advantage__item">
+							<div class="advantage__item-img"
+								style="background-image: url(./assets/img/components/advantage/img-6.png)"></div>
+							<p class="advantage__item-text">
+								Доставка курьером по Минску и Беларуси
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- customers -->
+			<section class="index-page__customers customers">
+				<div class="container">
+					<h3 class="customers__title title-2">НАШИ КЛИЕНТЫ</h3>
+					<div class="customers__list">
+						<img class="customers__img" src="./assets/img/components/customers/21vek.png" alt="21 vek">
+						<picture>
+							<source srcset="./assets/img/components/customers/empty-img.jpg" media="(max-width: 768px)">
+							<img class="customers__img" src="./assets/img/components/customers/life.png" alt="life">
+						</picture>
+						<picture>
+							<source srcset="./assets/img/components/customers/empty-img.jpg" media="(max-width: 768px)">
+							<img class="customers__img" src="./assets/img/components/customers/tut-by.png" alt="tut by">
+						</picture>
+						<picture>
+							<source srcset="./assets/img/components/customers/empty-img.jpg" media="(max-width: 768px)">
+							<img class="customers__img" src="./assets/img/components/customers/slivki.png" alt="slivki">
+						</picture>
+						<picture>
+							<source srcset="./assets/img/components/customers/empty-img.jpg" media="(max-width: 768px)">
+							<img class="customers__img" src="./assets/img/components/customers/bntu.png" alt="b n t u">
+						</picture>
+					</div>
+				</div>
+			</section>
+			<!-- blog -->
+			<section class="index-page__blog blog">
+				<div class="container flex-col">
+					<h3 class="blog__title title-2">БЛОГ</h3>
+					<div class="blog__notes">
+						<!-- article -->
+						<article class="blog__note note">
+							<div class="note__img"
+								style="background-image: url(./assets/img/components/notes/img-1.jpg)"></div>
+							<div class="note__content">
+								<h5 class="note__title">Студия интерьетной печати</h5>
+								<p class="note__text">
+									Наша компания изготовит для вас продукцию для оформления интерьера с помощью яркой
+									печати. Мы работаем с частными лицами, а также с бизнес-клиентами. Мы начинали свою
+									работу с изготовления картин на холсте.
+								</p>
+								<a class="note__btn btn-type-2--dark" href="#">ПОДРОБНЕЕ</a>
+							</div>
+						</article>
+						<!-- article -->
+						<article class="blog__note note">
+							<div class="note__img"
+								style="background-image: url(./assets/img/components/notes/img-1.jpg)"></div>
+							<div class="note__content">
+								<h5 class="note__title">Студия интерьетной печати</h5>
+								<p class="note__text">
+									Наша компания изготовит для вас продукцию для оформления интерьера с помощью яркой
+									печати. Мы работаем с частными лицами, а также с бизнес-клиентами. Мы начинали свою
+									работу с изготовления картин на холсте.
+								</p>
+								<a class="note__btn btn-type-2--dark" href="#">ПОДРОБНЕЕ</a>
+							</div>
+						</article>
+						<!-- article -->
+						<article class="blog__note note">
+							<div class="note__img"
+								style="background-image: url(./assets/img/components/notes/img-1.jpg)"></div>
+							<div class="note__content">
+								<h5 class="note__title">Студия интерьетной печати</h5>
+								<p class="note__text">
+									Наша компания изготовит для вас продукцию для оформления интерьера с помощью яркой
+									печати. Мы работаем с частными лицами, а также с бизнес-клиентами. Мы начинали свою
+									работу с изготовления картин на холсте.
+								</p>
+								<a class="note__btn btn-type-2--dark" href="#">ПОДРОБНЕЕ</a>
+							</div>
+						</article>
+					</div>
+					<a class="blog__btn btn-type-2--light" href="#">ПОСМОТРЕТЬ ЕЩЕ</a>
+				</div>
+			</section>
+			<!-- about us -->
+			<section class="index-page__info info">
+				<div class="container">
+					<h3 class="info__title title-2">SPRINTART.BY - НЕПОВТОРИМЫЙ СТИЛЬ ВАШЕГО ИНТЕРЬЕРА</h3>
+					<p class="info__text text">
+						Наша компания изготовит для вас продукцию для оформления интерьера с помощью яркой печати. Мы
+						работаем с частными лицами, а также с бизнес-клиентами. Мы начинали свою работу с изготовления
+						картин на холсте. Используя широкоформатный плоттер, натуральный хлопковый холст и деревянные
+						подрамники для наших картин, мы начали изготавливать интерьерные полотна для декорирования.
+						Популярностью пользовались картины в стиле абстракционизма, репродукции известных художников, а
+						также модульные картины и каталога. Также особой популярностью стали пользоваться картины из
+						фотографий клиентов. Мы используем различные обработки портретов под масло, поп-арт, бьюти-арт и
+						другие стили перед печатью холста.
+					</p>
+					<p class="info__text text">
+						На сегодня спектр услуг сильно вырос. Мы занимаемся комплексным оформлением квартир и офисов,
+						кафе, баров, гостиниц и банков. Вот лишь некоторые виды услуг, которые мы оказываем: печать
+						фотообоев с любым рисунком, изготовление модульных картины, флип-флоп картины, написание
+						портретов маслом от настоящих художников нашей студии, ультрафиолетовая печать на досках и
+						дереве, изготовление багета для картины, вышивок и зеркал, изготовление зеркал различной формы и
+						размера, деревянные карты мира на стену. Кроме интерьерной печати, мы предлагаем широкоформатную
+						печать для бизнеса: печать на баннере, широкоформатная печать на пленках, фотобумаге, виниле.
+					</p>
+					<p class="info__text text">
+						Каждая работа для нас уникальна. Мы с удовольствием подготовим для вас эскиз-макеты, согласуем
+						наилучшую для вас цену и доставим работу в любую точку Беларуси. Предложим выгодные условия
+						оплаты. Многие клиенты обращаются к нам повторно и становятся нашими любимыми заказчиками. Об
+						этом вы можете почитать на странице отзывов. Все отзывы от настоящих людей.
+					</p>
+					<p class="info__text text">
+						Будем работы поработать для вас!
+					</p>
 				</div>
 			</section>
 		</main>
@@ -361,6 +695,32 @@
 					</div>
 				</div>
 			</div>
+			<!-- footer menu -->
+			<div class="footer__menu">
+				<div class="container flex">
+					<div class="footer__menu-col">
+						<div class="footer__menu-title">Картины</div>
+						<div class="footer__menu-links">
+							<a class="footer__menu-link" href="#">Картины интерьерные на холсте</a>
+							<a class="footer__menu-link" href="#">Своё фото на холсте</a>
+							<a class="footer__menu-link" href="#">Картины модульные</a>
+							<a class="footer__menu-link" href="#">Мультипиано</a>
+							<a class="footer__menu-link" href="#">Фотоколлаж</a>
+						</div>
+					</div>
+					<div class="footer__menu-col">
+						<div class="footer__menu-title">Фотообои</div>
+						<div class="footer__menu-links">
+							<a class="footer__menu-link" href="#">Интерьерные фотообои</a>
+							<a class="footer__menu-link" href="#">Фотообои в гостиную</a>
+							<a class="footer__menu-link" href="#">Фотообои на кухню</a>
+							<a class="footer__menu-link" href="#">Фотообои для спальни</a>
+							<a class="footer__menu-link" href="#">Фотообои для детской</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<!-- footer bottom -->
 			<div class="footer__bottom">
 				<div class="container  vt-center">
