@@ -5,7 +5,6 @@ INDEX PAGE
 	@at-root .starting {
 		position: relative;
 		padding-top: 60px;
-		overflow: hidden;
 
 		&__spot-bg {
 			top: -940px;
@@ -31,26 +30,40 @@ INDEX PAGE
 			}
 		}
 
-		&__title,
-		&__subtitle {
+		&__title {
+			margin-bottom: 30px;
 			text-transform: uppercase;
 		}
 
-		&__title {
-			margin-bottom: 30px;
-		}
+		&__utp {
+			&-list {
+				margin-bottom: 42px;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: (36/18);
+				text-transform: uppercase;
+			}
 
-		&__subtitle {
-			margin-bottom: 100px;
-			font-weight: 700;
-			font-size: 30px;
-			line-height: (40/30);
-			color: var(--cl-text-lig);
+			&-item {
+				position: relative;
+				padding-left: 39px;
+
+				&::before {
+					content: "";
+					position: absolute;
+					left: 0;
+					top: 2px;
+					display: inline-block;
+					width: 24px;
+					height: 18px;
+					background: url(./../../img/icons/galka.png) no-repeat;
+					background-size: contain;
+				}
+			}
 		}
 
 		&__text {
 			margin: 25px 0;
-			font-size: 24px;
 		}
 
 		&__application {
@@ -119,11 +132,6 @@ INDEX PAGE
 				margin: 0 auto;
 			}
 
-			&__subtitle {
-				margin-bottom: 80px;
-				font-size: 26px;
-			}
-
 			&__text {
 				font-size: 22px;
 			}
@@ -144,14 +152,23 @@ INDEX PAGE
 				margin-bottom: 15px;
 			}
 
-			&__subtitle {
-				margin-bottom: 35px;
-				font-size: 20px;
-				line-height: (25/20);
-			}
-
 			&__piece {
 				width: 44%;
+			}
+
+			&__utp {
+				&-list {
+					font-size: 14px;
+				}
+
+				&-item {
+					padding-left: 35px;
+
+					&::before {
+						width: 20px;
+						height: 15px;
+					}
+				}
 			}
 
 			&__text {
@@ -206,7 +223,7 @@ INDEX PAGE
 	}
 
 	&__eco {
-		margin-top: 75px;
+		margin-top: 97px;
 
 		@include mobile {
 			margin-top: 39px;
@@ -215,13 +232,26 @@ INDEX PAGE
 
 	@at-root .eco {
 		.container {
-			background: url(./../../img/pages/index/eco-bg.png) no-repeat right top;
 			min-height: 415px;
 		}
 
 		&__content {
-			width: 50.5%;
+			display: flex;
+			justify-content: space-between;
+
+			&-col {
+				width: 39%;
+			}
+
+			&-bg {
+				align-self: center;
+				width: 456px;
+				height: 314px;
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
 		}
+
 		&__title {
 			margin-bottom: 48px;
 		}
@@ -230,18 +260,58 @@ INDEX PAGE
 			margin-bottom: 30px;
 		}
 
+		&__list {
+			margin-top: -80px;
+
+			&-item {
+				position: relative;
+				padding-top: 85px;
+				max-width: 245px;
+
+				&:not(:last-child) {
+					margin-bottom: 38px;
+				}
+
+				&::before {
+					content: "";
+					display: block;
+					position: absolute;
+					top: 0;
+					left: 50%;
+					width: 64px;
+					height: 64px;
+					transform: translateX(-50%);
+					background: url(./../../img/pages/index/eco_sprites.png) no-repeat;
+				}
+
+				&:nth-of-type(1)::before {
+					background-position: -10px -10px;
+				}
+				&:nth-of-type(2)::before {
+					background-position: -10px -90px;
+				}
+				&:nth-of-type(3)::before {
+					background-position: -10px -173px;
+				}
+			}
+		}
+
 		@include desctop-mid {
-			.container {
-				background-size: 500px auto;
-				background-position: right 50px;
+			&__content-bg {
+				width: 364px;
+				height: 263px;
 			}
 		}
 
 		@include desctop-min {
-			.container {
-				background-size: 420px auto;
-				min-height: auto;
+			&__content-col {
+				width: 60%;
 			}
+
+			&__content-bg {
+				display: none;
+			}
+		
 		}
 
 		@include table {
@@ -250,7 +320,24 @@ INDEX PAGE
 			}
 
 			&__content {
+				flex-direction: column;
+				justify-content: flex-start;
 				width: auto;
+
+				&-col {
+					width: auto;
+				}
+			}
+
+			&__list {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				margin: 30px 0 -20px;
+
+				&-item {
+					margin: 0 20px 20px;
+				}
 			}
 		}
 
@@ -263,5 +350,182 @@ INDEX PAGE
 
 	&__reviews {
 		margin-top: 70px;
+	}
+
+	&__final {
+
+	}
+
+	@at-root .final {
+		position: relative;
+		padding: 70px 0 100px;
+
+		.container {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__text-bg {
+			top: 0;
+			right: -3px;
+		}
+
+		&__col {
+			&-title {
+				margin-bottom: 70px;
+				text-align: center;
+			}
+			&-second {
+				padding: 20px 0 0;
+				width: 54.4%;
+			}
+		}
+
+		.application {
+			&__btn {
+				margin-top: 55px;
+				min-width: 315px;
+				height: 70px;
+				font-size: 24px;
+				border-radius: 35px;
+			}
+
+			.b-input {
+				--pd: 0 52px;
+				--air: 36px;
+				--height: 65px;
+				--fs: 24px;
+				--border: 2px solid var(--border-color-lig);
+
+				&-file::before {
+					right: 29px;
+					width: 24px;
+					height: 24px;
+					background-image: url(./../../img/clip@1.5x.png);
+				}
+			}
+		}
+
+		&__piece {
+			width: 390px;
+		}
+
+		@include desctop-mid {
+			&__col {
+				&-title {
+					margin-bottom: 50px;
+				}
+
+				&-second {
+					width: 60%;
+				}
+			}
+			
+			&__piece {
+				width: 370px;
+			}
+		}
+
+		@include desctop-min {
+			&__text-bg {
+				display: none;
+			}
+
+			&__col {
+				&-title {
+					margin-bottom: 45px;
+				}
+
+				&-second {
+					width: 60%;
+				}
+			}
+
+			.application {
+				&__btn {
+					margin-top: 35px;
+					min-width: 290px;
+					height: 60px;
+					font-size: 22px;
+					border-radius: 30px;
+				}
+	
+				.b-input {
+					--pd: 0 45px 0 40px;
+					--air: 28px;
+					--height: 55px;
+					--fs: 22px;
+					--border: 2px solid var(--border-color-lig);
+	
+					&-file::before {
+						right: 22px;
+						width: 22px;
+						height: 22px;
+					}
+				}
+			}
+			
+			&__piece {
+				width: 320px;
+			}
+		}
+
+		@include table {
+			padding: 50px 0 80px;
+
+			.container {
+				flex-direction: column;
+			}
+
+			&__col-title {
+				margin-bottom: 35px;
+			}
+	
+			&__col-second {
+					margin-bottom: 60px; 
+					order: -1;
+					padding: 0;
+					width: auto;
+			}
+	
+			&__piece {
+				margin: 0 auto;
+				width: 320px;
+			}
+		}
+
+		@include mobile {
+			&__col-first {
+				margin-bottom: 42px;
+			}
+
+			.application {
+				&__btn {
+					margin-top: 30px;
+					min-width: 212px;
+					height: 47px;
+					font-size: 16px;
+					border-radius: 23.5px;
+				}
+	
+				.b-input {
+					--pd: 0 40px 0 37px;
+					--air: 18px;
+					--height: 45px;
+					--fs: 16px;
+					--border: 2px solid var(--border-color-lig);
+	
+					&-file::before {
+						right: 19px;
+						width: 18px;
+						height: 18px;
+					}
+				}
+			}
+
+			&__piece {
+				width: 44%;
+			}
+		}
 	}
 }

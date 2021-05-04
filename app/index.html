@@ -6,6 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="ArtBro">
 	<title>Document</title>
+	<!-- Yandex-maps -->
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=9e4418c1-6bb6-4c17-98ea-7607b8b71787&lang=ru_RU"
+		type="text/javascript">
+		</script>
 	<link rel="stylesheet" href="./assets/style/css/style.css">
 </head>
 
@@ -48,7 +52,6 @@
 					</div>
 				</div>
 			</div>
-
 			<!-- header middle -->
 			<div class="header__middle">
 				<div class="container vt-center">
@@ -72,7 +75,7 @@
 								<a class="contacts__item contacts__tg" href="https://msngr.link/tg/375172750015">
 									<img src="./assets/img/icons/sci/telegram.png" alt="">
 								</a>
-								<a class="contacts__item contacts__wp" href="https://msngr.link/wa/375172750015">
+								<a class="contacts__item contacts__viber" href="https://msngr.link/vi/375172750015">
 									<img src="./assets/img/icons/sci/whatsapp.png" alt="">
 								</a>
 								<a class="contacts__item contacts__phone" href="tel:+375172750015">
@@ -86,7 +89,7 @@
 								<a class="contacts__item contacts__tg" href="https://msngr.link/tg/375296150010">
 									<img src="./assets/img/icons/sci/telegram.png" alt="">
 								</a>
-								<a class="contacts__item contacts__wp" href="https://msngr.link/wa/375296150010">
+								<a class="contacts__item contacts__viber" href="https://msngr.link/vi/375172750015">
 									<img src="./assets/img/icons/sci/whatsapp.png" alt="">
 								</a>
 								<a class="contacts__item contacts__phone" href="tel:+375296150010">
@@ -101,7 +104,6 @@
 					</div>
 				</div>
 			</div>
-
 			<!-- header bottom -->
 			<div class="header__bottom">
 				<div class="container vt-center">
@@ -111,7 +113,7 @@
 							<a class="contacts__item contacts__tg" href="https://msngr.link/tg/375172750015">
 								<img src="./assets/img/icons/sci/telegram.png" alt="">
 							</a>
-							<a class="contacts__item contacts__wp" href="https://msngr.link/wa/375172750015">
+							<a class="contacts__item contacts__viber" href="https://msngr.link/vi/375172750015">
 								<img src="./assets/img/icons/sci/whatsapp.png" alt="">
 							</a>
 							<a class="contacts__item contacts__phone" href="tel:+375172750015">
@@ -122,97 +124,81 @@
 					<!-- burger -->
 					<nav class="header__burger">
 						<ul class="header__menu menu">
-							<li class="menu__item">
+							<li class="menu__item" data-dropdown="wrapp">
 								<a class="menu__item-link" href="#">
-									<span data-type="with-arrow">КАРТИНЫ</span>
+									<span data-type="with-arrow">
+										<span class="menu__item-arrow" data-dropdown="btn"></span>
+										КАРТИНЫ
+									</span>
 								</a>
-
-								<div class="menu__item-sub sub-menu">
+								<div class="menu__item-sub sub-menu" data-dropdown="list">
 									<div class="container">
 										<div class="sub-menu__links">
 											<a href="#" class="sub-menu__link">
 												<span class="sub-menu__link-img"
-													style="background-image: url(./assets/img/nav/paintings/art.jpg)"></span>
-												<span class="sub-menu__link-text">КАРТИНЫ ИнтерьНА ХОЛСТЕ</span>
-											</a>
-											<a href="#" class="sub-menu__link">
-												<span class="sub-menu__link-img"
 													style="background-image: url(./assets/img/nav/paintings/pop-art.jpg)"></span>
-												<span class="sub-menu__link-text">КАРТИНЫ ПОП-АРТ</span>
-											</a>
-											<a href="#" class="sub-menu__link">
-												<span class="sub-menu__link-img"
-													style="background-image: url(./assets/img/nav/paintings/fotokollag.jpg)"></span>
-												<span class="sub-menu__link-text">ФОТОКОЛЛАЖИ</span>
-											</a>
-											<a href="#" class="sub-menu__link">
-												<span class="sub-menu__link-img"
-													style="background-image: url(./assets/img/nav/paintings/flip.jpg)"></span>
-												<span class="sub-menu__link-text">флип-флоп портреты <br> на
-													холсте</span>
+												<span class="sub-menu__link-text">КАРТИНЫ ИНТЕРЬЕРНЫЕ НА ХОЛСТЕ</span>
 											</a>
 											<a href="#" class="sub-menu__link">
 												<span class="sub-menu__link-img"
 													style="background-image: url(./assets/img/nav/paintings/drim-art.jpg)"></span>
-												<span class="sub-menu__link-text">Dream Art картины</span>
+												<span class="sub-menu__link-text">СВОЕ ФОТО НА ХОЛСТЕ</span>
 											</a>
 											<a href="#" class="sub-menu__link">
 												<span class="sub-menu__link-img"
-													style="background-image: url(./assets/img/nav/paintings/fotomazaika.jpg)">
+													style="background-image: url(./assets/img/nav/paintings/modul.jpg)"></span>
+												<span class="sub-menu__link-text">КАРТИНЫ МОДУЛЬНЫЕ</span>
+											</a>
+
+											<a href="#" class="sub-menu__link">
+												<span class="sub-menu__link-img"
+													style="background-image: url(./assets/img/nav/paintings/multipano.jpg)"></span>
+												<span class="sub-menu__link-text">МУЛЬТИПАНО</span>
+											</a>
+											<a href="#" class="sub-menu__link">
+												<span class="sub-menu__link-img"
+													style="background-image: url(./assets/img/nav/paintings/fotokollag.jpg)">
 												</span>
-												<span class="sub-menu__link-text">фотомозаика из <br> 1000 фото </span>
-											</a>
-											<a href="#" class="sub-menu__link">
-												<span class="sub-menu__link-img"
-													style="background-image: url(./assets/img/nav/paintings/clock.jpg)"></span>
-												<span class="sub-menu__link-text">картины-часы</span>
-											</a>
-											<a href="#" class="sub-menu__link">
-												<span class="sub-menu__link-img"
-													style="background-image: url(./assets/img/nav/paintings/fotostena.jpg)"></span>
-												<span class="sub-menu__link-text">фотостена</span>
+												<span class="sub-menu__link-text">ФОТОКОЛЛАЖ</span>
 											</a>
 										</div>
 									</div>
 								</div>
 							</li>
-							<li class="menu__item">
+							<li class="menu__item" data-dropdown="wrapp">
 								<a class="menu__item-link" href="#">
-									<span data-type="with-arrow">ФОТООБОИ</span>
-									<div class="menu__item-arrow"></div>
+									<span data-type="with-arrow">
+										ФОТООБОИ
+										<span class="menu__item-arrow" data-dropdown="btn"></span>
+									</span>
 								</a>
-								<div class="menu__item-sub sub-menu">
+								<div class="menu__item-sub sub-menu" data-dropdown="list">
 									<div class="container">
 										<div class="sub-menu__links">
 											<a href="#" class="sub-menu__link">
 												<span class="sub-menu__link-img"
 													style="background-image: url(./assets/img/nav/wallpaper/img_1.jpg)"></span>
-												<span class="sub-menu__link-text">фотообои для интерьера</span>
-											</a>
-											<a href="#" class="sub-menu__link">
-												<span class="sub-menu__link-img"
-													style="background-image: url(./assets/img/nav/wallpaper/img_2.jpg)"></span>
-												<span class="sub-menu__link-text">3d фотообои</span>
-											</a>
-											<a href="#" class="sub-menu__link">
-												<span class="sub-menu__link-img"
-													style="background-image: url(./assets/img/nav/wallpaper/img_3.jpg)"></span>
-												<span class="sub-menu__link-text">фотообои в детскую <br> комнату</span>
+												<span class="sub-menu__link-text">ИНТЕРЬЕРНЫЕ ФОТООБОИ</span>
 											</a>
 											<a href="#" class="sub-menu__link">
 												<span class="sub-menu__link-img"
 													style="background-image: url(./assets/img/nav/wallpaper/img_4.jpg)"></span>
-												<span class="sub-menu__link-text">фотообои для <br> спальни</span>
-											</a>
-											<a href="#" class="sub-menu__link">
-												<span class="sub-menu__link-img"
-													style="background-image: url(./assets/img/nav/wallpaper/img_5.jpg)"></span>
-												<span class="sub-menu__link-text">фотообои для <br> гостиной</span>
+												<span class="sub-menu__link-text">ФОТООБОИ В ГОСТИННУЮ</span>
 											</a>
 											<a href="#" class="sub-menu__link">
 												<span class="sub-menu__link-img"
 													style="background-image: url(./assets/img/nav/wallpaper/img_6.jpg)"></span>
 												<span class="sub-menu__link-text">фотообои на <br> кухню</span>
+											</a>
+											<a href="#" class="sub-menu__link">
+												<span class="sub-menu__link-img"
+													style="background-image: url(./assets/img/nav/wallpaper/img_5.jpg)"></span>
+												<span class="sub-menu__link-text">фотообои для <br> спальни</span>
+											</a>
+											<a href="#" class="sub-menu__link">
+												<span class="sub-menu__link-img"
+													style="background-image: url(./assets/img/nav/wallpaper/img_3.jpg)"></span>
+												<span class="sub-menu__link-text">ФОТООБОИ ДЛЯ <br> комнату</span>
 											</a>
 										</div>
 									</div>
@@ -222,7 +208,7 @@
 								<a class="menu__item-link" href="#">ПОРТФОЛИО</a>
 							</li>
 							<li class="menu__item">
-								<a class="menu__item-link" href="#">ДОСТАВКА</a>
+								<a class="menu__item-link" href="#">ОПЛАТА И ДОСТАВКА</a>
 							</li>
 							<li class="menu__item">
 								<a class="menu__item-link" href="#">О НАС</a>
@@ -258,8 +244,14 @@
 					<!-- col firs -->
 					<div class="starting__col starting__col-first">
 						<h1 class="starting__title title-1">СТУДИЯ ИНТЕРЬЕРНОЙ ПЕЧАТИ ДЛЯ ДОМА И ОФИСА</h1>
-						<h3 class="starting__subtitle">ОРИГИНАЛЬНЫЕ ПОДАРКИ ДЛЯ ЛЮБОГО ПОВОДА</h3>
-						<p class="starting__text">
+						<ul class="starting__utp-list">
+							<li class="starting__utp-item">Самая экологически безопасная УФ печать</li>
+							<li class="starting__utp-item">Бесплатный дизайн макетов</li>
+							<li class="starting__utp-item">> 10 млн изображений под ваш интерьер</li>
+							<li class="starting__utp-item">только лучшие материалы (Япония, германия)</li>
+							<li class="starting__utp-item">монтаж и поклейка с гарантией</li>
+						</ul>
+						<p class="starting__text text">
 							Оформите заказ и получите предложение со скидкой до 50% сегодня!
 						</p>
 						<!-- application form -->
@@ -287,7 +279,6 @@
 								<source srcset="./assets/img/piece.webp 1x" type="image/webp">
 								<img src="./assets/img/piece.jpg" srcset="./assets/img/piece@2x.jpg 2x" alt="Картина">
 							</picture>
-
 						</div>
 					</div>
 				</div>
@@ -309,6 +300,94 @@
 					</a>
 				</div>
 			</div>
+			<!-- eco -->
+			<section class="index-page__eco eco">
+				<div class="container">
+					<h3 class="eco__title title-2">БЕЗОПАСНОСТЬ И ЭКОЛОГИЧНОСТЬ</h3>
+					<div class="eco__content">
+						<div class="eco__content-col">
+							<p class="eco__text text">
+								УФ-чернила уже одобрены инстанцией органа сертификации, что уже гарантирует безопасность
+								применения этого продукта в бытовых, образовательных, дошкольных и медицинских
+								учреждениях!
+								Наши УФ-чернила исключительно дружественны в отношении окружающей среды. Они не выделяют
+								опасных летучих органических соединений! В настоящее время наши чернила проходят
+								сертификацию GREENGUARD, основанную на строжайших международных стандартах, действующих
+								в
+								отношении химических выбросов в атмосферу.
+							</p>
+							<p class="eco__text text">
+								<span class="fw-semiBold">НАШЛИ ДЕШЕВЛЕ?</span> Скорее всего Вам предлагают <span
+									class="text-red fw-bold">«СОЛЬВЕНТ»</span> («ЭкоСОЛЬВЕНТ») – задумайтесь о своем
+								здоровье!
+								Этот вид печати запрещен во многих странах
+								мира, где заботятся об экологии.
+							</p>
+						</div>
+						<div class="eco__content-bg" style="background-image: url(./assets/img/pages/index/eco-bg.png)">
+						</div>
+						<div class="eco__list">
+							<div class="eco__list-item">
+								Безопастное нахождение в детских комнатах и дошкольных учреждениях
+							</div>
+							<div class="eco__list-item">
+								Мы делаем монтаж и поклейку с гарантией на наши работы
+							</div>
+							<div class="eco__list-item">
+								Самое высокое качество печати
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</section>
+			<!-- order process -->
+			<section class="index-page__order-process order-process">
+				<div class="container flex-col">
+					<h3 class="order-process__title title-2">КАК ОФОРМИТЬ ЗАКАЗ?</h3>
+					<div class="order-process__list">
+						<div class="order-process__item flex-col">
+							<div class="order-process__item-img"
+								style="background-image: url(./assets/img/components/order-process/img-1.png)"></div>
+							<p class="order-process__item-text">Выбираете своё ФОТО или готовое изображение <a
+									class="selected-text fw-semiBold" href="#">SHUTTERstock</a></p>
+						</div>
+						<div class="order-process__item flex-col">
+							<div class="order-process__item-img"
+								style="background-image: url(./assets/img/components/order-process/img-2.png)"></div>
+							<p class="order-process__item-text">
+								Оформляете заявку на сайте, через мессенджеры или на почту <a
+									class="selected-text fw-semiBold"
+									href="mailto:info@sprintart.by">info@sprintart.by</a>
+								<a class="order-process__telegram" href="https://msngr.link/tg/375172750015"></a>
+								<a class="order-process__viber" href="https://msngr.link/vi/375172750015"></a>
+							</p>
+						</div>
+						<div class="order-process__item flex-col">
+							<div class="order-process__item-img"
+								style="background-image: url(./assets/img/components/order-process/img-3.png)"></div>
+							<p class="order-process__item-text">Дизайнер готовит макет Вашего интерьера и согласует все
+								технические моменты</p>
+						</div>
+						<div class="order-process__item flex-col">
+							<div class="order-process__item-img"
+								style="background-image: url(./assets/img/components/order-process/img-4.png)"></div>
+							<p class="order-process__item-text">Изготавливаем картину, фотообои за 1-3 дня</p>
+						</div>
+						<div class="order-process__item flex-col">
+							<div class="order-process__item-img"
+								style="background-image: url(./assets/img/components/order-process/img-5.png)"></div>
+							<p class="order-process__item-text">Доставляем по всей Беларуси за 1-3 дня</p>
+						</div>
+						<div class="order-process__item flex-col">
+							<div class="order-process__item-img"
+								style="background-image: url(./assets/img/components/order-process/img-6.png)"></div>
+							<p class="order-process__item-text">Вы оплачиваете Ваш заказ</p>
+						</div>
+					</div>
+					<button class="examples__btn btn-type-2--light" aria-label="Оформите заказ">ОФОРМИТЬ ЗАКАЗ</button>
+				</div>
+			</section>
 			<!-- examples -->
 			<section class="index-page__examples examples">
 				<div class="container flex-col">
@@ -326,66 +405,6 @@
 					<button class="examples__btn btn-type-2--light" aria-label="Смотреть портфолио">Смотреть портфолио
 					</button>
 				</div>
-			</section>
-			<!-- order process -->
-			<section class="index-page__order-process order-process">
-				<div class="container flex-col">
-					<h3 class="order-process__title title-2">КАК ОФОРМИТЬ ЗАКАЗ?</h3>
-					<div class="order-process__list">
-						<div class="order-process__item flex-col">
-							<div class="order-process__item-img"
-								style="background-image: url(./assets/img/components/order-process/img-1.png)"></div>
-							<p class="order-process__item-text">Выбираете фото или изображение</p>
-						</div>
-						<div class="order-process__item flex-col">
-							<div class="order-process__item-img"
-								style="background-image: url(./assets/img/components/order-process/img-2.png)"></div>
-							<p class="order-process__item-text">Отправляете заявку, заполнив форму заказа или
-								отправляете на нашу почту <a class="selected-text fw-semiBold"
-									href="mailto:info@sprintart.by">info@sprintart.by</a></p>
-						</div>
-						<div class="order-process__item flex-col">
-							<div class="order-process__item-img"
-								style="background-image: url(./assets/img/components/order-process/img-3.png)"></div>
-							<p class="order-process__item-text">Дизайнер готовит макет вашей работы и отправляет на
-								согласование</p>
-						</div>
-						<div class="order-process__item flex-col">
-							<div class="order-process__item-img"
-								style="background-image: url(./assets/img/components/order-process/img-4.png)"></div>
-							<p class="order-process__item-text">Изготавливаем картину, фотообои за 1-3 дня</p>
-						</div>
-						<div class="order-process__item flex-col">
-							<div class="order-process__item-img"
-								style="background-image: url(./assets/img/components/order-process/img-5.png)"></div>
-							<p class="order-process__item-text">Доставляем в любой населенный пункт Беларуси! </p>
-						</div>
-					</div>
-					<button class="examples__btn btn-type-2--light" aria-label="Оформите заказ">ОФОРМИТЬ ЗАКАЗ</button>
-				</div>
-			</section>
-			<!-- eco -->
-			<section class="index-page__eco eco">
-				<div class="container">
-					<h3 class="eco__title title-2">БЕЗОПАСНОСТЬ И ЭКОЛОГИЧНОСТЬ</h3>
-					<div class="eco__content">
-						<p class="eco__text text">
-							УФ-чернила уже одобрены инстанцией органа сертификации, что уже гарантирует безопасность
-							применения этого продукта в бытовых, образовательных, дошкольных и медицинских учреждениях!
-							Наши УФ-чернила исключительно дружественны в отношении окружающей среды. Они не выделяют
-							опасных летучих органических соединений! В настоящее время наши чернила проходят
-							сертификацию GREENGUARD, основанную на строжайших международных стандартах, действующих в
-							отношении химических выбросов в атмосферу.
-						</p>
-						<p class="eco__text text">
-							<span class="fw-semiBold">НАШЛИ ДЕШЕВЛЕ?</span> Скорее всего Вам предлагают <span
-								color="text-red">«СОЛЬВЕНТ»</span> («ЭкоСОЛЬВЕНТ») – задумайтесь о своем здоровье!
-							Этот вид печати запрещен во многих странах
-							мира, где заботятся об экологии.
-						</p>
-					</div>
-				</div>
-
 			</section>
 			<!-- reviews -->
 			<section class="index-page__reviews reviews">
@@ -469,43 +488,46 @@
 							<div class="advantage__item-img"
 								style="background-image: url(./assets/img/components/advantage/img-1.png)"></div>
 							<p class="advantage__item-text">
-								<span class="fw-bold">24</span> часа <span class="fw-bold">7</span> дней в неделю
-								принимаем ваши заказы
+								<span class="fw-bold">ЭКО</span> - самая экологичная и качественная печать
 							</p>
 						</div>
 						<div class="advantage__item">
 							<div class="advantage__item-img"
 								style="background-image: url(./assets/img/components/advantage/img-2.png)"></div>
 							<p class="advantage__item-text">
-								Без предоплаты, оплата при получении
+
+								<span class="fw-bold">КАЧЕСТВО</span> - Вы увидите Ваш заказ и только потом оплачиваете!
+								БЕЗ <span class="fw-bold">ПРЕДОПЛАТЫ</span>
 							</p>
 						</div>
 						<div class="advantage__item">
 							<div class="advantage__item-img"
 								style="background-image: url(./assets/img/components/advantage/img-3.png)"></div>
 							<p class="advantage__item-text">
-								Скидки до <span class="fw-bold">30%</span>, низкие цены и распродажи
+								<span class="fw-bold">ДИЗАЙН</span> - опытный штат дизайнеров реализует Ваши любые
+								пожелания
 							</p>
 						</div>
 						<div class="advantage__item">
 							<div class="advantage__item-img"
 								style="background-image: url(./assets/img/components/advantage/img-4.png)"></div>
 							<p class="advantage__item-text">
-								<span class="fw-bold">100%</span> гарантия возврата денег
+								<span class="fw-bold">24/7</span>мы принимаем Ваши заказы
 							</p>
 						</div>
 						<div class="advantage__item">
 							<div class="advantage__item-img"
 								style="background-image: url(./assets/img/components/advantage/img-5.png)"></div>
 							<p class="advantage__item-text">
-								<span class="fw-bold">10380</span> довольных и счастливых клиентов
+								<span class="fw-bold">ГАРАНТИЯ И МОНТАЖ</span> - мы даем гарантию не только на изделия,
+								но и на монтаж, выполненный нашими сециалистами
 							</p>
 						</div>
 						<div class="advantage__item">
 							<div class="advantage__item-img"
 								style="background-image: url(./assets/img/components/advantage/img-6.png)"></div>
 							<p class="advantage__item-text">
-								Доставка курьером по Минску и Беларуси
+								<span class="fw-bold">ДОСТАВКА</span> - по Минску и Беларуси
 							</p>
 						</div>
 					</div>
@@ -516,22 +538,24 @@
 				<div class="container">
 					<h3 class="customers__title title-2">НАШИ КЛИЕНТЫ</h3>
 					<div class="customers__list">
-						<img class="customers__img" src="./assets/img/components/customers/21vek.png" alt="21 vek">
+						<img class="customers__img" src="./assets/img/components/customers/a-100.jpg" alt="a-100">
 						<picture>
 							<source srcset="./assets/img/components/customers/empty-img.jpg" media="(max-width: 768px)">
-							<img class="customers__img" src="./assets/img/components/customers/life.png" alt="life">
+							<img class="customers__img" src="./assets/img/components/customers/atlant.jpg" alt="atlant">
 						</picture>
 						<picture>
 							<source srcset="./assets/img/components/customers/empty-img.jpg" media="(max-width: 768px)">
-							<img class="customers__img" src="./assets/img/components/customers/tut-by.png" alt="tut by">
+							<img class="customers__img" src="./assets/img/components/customers/audi.jpg" alt="audi">
 						</picture>
 						<picture>
 							<source srcset="./assets/img/components/customers/empty-img.jpg" media="(max-width: 768px)">
-							<img class="customers__img" src="./assets/img/components/customers/slivki.png" alt="slivki">
+							<img class="customers__img" src="./assets/img/components/customers/belrosstrach.jpg"
+								alt="belrosstrach">
 						</picture>
 						<picture>
 							<source srcset="./assets/img/components/customers/empty-img.jpg" media="(max-width: 768px)">
-							<img class="customers__img" src="./assets/img/components/customers/bntu.png" alt="b n t u">
+							<img class="customers__img" src="./assets/img/components/customers/bergamo.jpg"
+								alt="bergamo">
 						</picture>
 					</div>
 				</div>
@@ -621,6 +645,42 @@
 					</p>
 				</div>
 			</section>
+			<div class="index-page__final final">
+				<div class="final__text-bg text-bg" style="background-image: url(./assets/img/text-bg.png)"></div>
+				<div class="container">
+					<!-- col firs -->
+					<div class="final__col final__col-first">
+						<div class="final__piece piece">
+							<picture>
+								<source srcset="./assets/img/piece.webp 1x" type="image/webp">
+								<img src="./assets/img/piece.jpg" srcset="./assets/img/piece@2x.jpg 2x" alt="Картина">
+							</picture>
+						</div>
+					</div>
+					<!-- col second -->
+					<div class="final__col final__col-second">
+						<div class="final__col-title title-1">ОФОРМИТЕ ЗАЯВКУ!</div>
+						<!-- application form -->
+						<form class="final__application application" action="#">
+							<div class="application__b-input b-input">
+								<input type="tel" placeholder="+375">
+							</div>
+							<div class="application__b-input b-input">
+								<input type="email" placeholder="E-mail">
+							</div>
+							<label class="application__b-input b-input b-input-file">
+								<input type="file" multiple accept="image/*" placeholder="Прикрепите фотографии">
+								<span>Прикрепите фотографии</span>
+							</label>
+							<div class="application__b-input b-input">
+								<input type="text" placeholder="Введите сообщения">
+							</div>
+							<button class="application__btn btn-type-1" type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="location"></div>
 		</main>
 
 		<!-- FOOTER -->
@@ -683,8 +743,8 @@
 									href="https://msngr.link/tg/375172750015">
 									<img src="./assets/img/icons/sci/telegram.png" alt="">
 								</a>
-								<a class="footer__contacts-item footer__contacts-wp"
-									href="https://msngr.link/wa/375172750015">
+								<a class="footer__contacts-item footer__contacts-viber"
+									href="https://msngr.link/vi/375172750015">
 									<img src="./assets/img/icons/sci/whatsapp.png" alt="">
 								</a>
 								<a class="footer__contacts-item footer__contacts-phone" href="tel:+375172750015">
